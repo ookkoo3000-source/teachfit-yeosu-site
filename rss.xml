@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>티치핏여수 블로그</title>
+  <link>https://yeosu.slovrest.com/blog.html</link>
+  <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
+  <language>ko-kr</language>
+  <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
+  <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0900</lastBuildDate>
+
+  <!-- RSS_ITEMS_START -->
+
+  <!-- RSS_ITEMS_END -->
+
+</channel>
+</rss>

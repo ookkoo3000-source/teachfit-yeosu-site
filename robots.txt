@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /apply.html
+Disallow: /thanks.html
+Allow: /
+
+Sitemap: https://yeosu.slovrest.com/sitemap.xml
