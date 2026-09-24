@@ -1,2 +1,3 @@
 github-support-ticket-draft*.txt
 .env.local
+__pycache__/

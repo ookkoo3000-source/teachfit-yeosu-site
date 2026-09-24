@@ -2,6 +2,9 @@
 import os
 import json
 import random
+import re
+import time
+CSS_VER = str(int(time.time()))
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
@@ -96,17 +99,17 @@ def head(title, desc, path_prefix, canonical, noindex=False):
 <link rel="canonical" href="{canonical}">
 <link rel="alternate" type="application/rss+xml" title="{brand} 블로그" href="{base}/rss.xml">
 {verify}{robots}{font}
-<link rel="stylesheet" href="{p}assets/style.css">
+<link rel="stylesheet" href="{p}assets/style.css?v={CSS_VER}">
 </head>
 <body>
-'''.format(title=title, desc=desc, canonical=canonical, font=FONT_LINK, p=path_prefix, robots=robots_tag, verify=verify_tags, brand=BRAND, base=BASE_URL)
+'''.format(title=title, desc=desc, canonical=canonical, font=FONT_LINK, p=path_prefix, robots=robots_tag, verify=verify_tags, brand=BRAND, base=BASE_URL, CSS_VER=CSS_VER)
 
 def wave_strip():
     return '''<svg class="wave-strip" viewBox="0 0 800 56" preserveAspectRatio="none" aria-hidden="true">
   <defs>
     <linearGradient id="yeosuNightSea" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" style="stop-color:var(--primary-strong)"/>
-      <stop offset="100%" style="stop-color:var(--primary)"/>
+      <stop offset="0%" style="stop-color:var(--panel)"/>
+      <stop offset="100%" style="stop-color:var(--panel-2)"/>
     </linearGradient>
   </defs>
   <rect x="0" y="0" width="800" height="56" fill="url(#yeosuNightSea)"/>
@@ -202,8 +205,27 @@ def footer(path_prefix):
 </html>
 '''.format(p=path_prefix, brand=BRAND, region=REGION_SHORT, phone=PHONE_DISPLAY)
 
-def page(filename, title, desc, active, body, path_prefix="", canonical="", noindex=False, extra_js=""):
-    full = head(title, desc, path_prefix, canonical, noindex) + wave_strip() + topbar() + header(path_prefix, active) + '<main class="wrap">\n' + body + '\n</main>\n' + footer(path_prefix)
+def og_tags(title, desc, canonical, og_image, is_article):
+    t = title.replace('"', '&quot;')
+    d = desc.replace('"', '&quot;')
+    lines = [
+        '<meta property="og:type" content="{}">'.format("article" if is_article else "website"),
+        '<meta property="og:site_name" content="{}">'.format(BRAND),
+        '<meta property="og:title" content="{}">'.format(t),
+        '<meta property="og:description" content="{}">'.format(d),
+        '<meta property="og:url" content="{}">'.format(canonical),
+    ]
+    if og_image:
+        lines += ['<meta property="og:image" content="{}">'.format(og_image),
+                  '<meta name="twitter:card" content="summary_large_image">',
+                  '<meta name="twitter:image" content="{}">'.format(og_image)]
+    return chr(10).join(lines) + chr(10)
+
+def page(filename, title, desc, active, body, path_prefix="", canonical="", noindex=False, extra_js="", og_image=""):
+    full = head(title, desc, path_prefix, canonical, noindex)
+    if not noindex:
+        full = full.replace('</head>', og_tags(title, desc, canonical, og_image, filename.startswith("blog/")) + '</head>', 1)
+    full = full + wave_strip() + topbar() + header(path_prefix, active) + '<main class="wrap">\n' + body + '\n</main>\n' + footer(path_prefix)
     full = full.replace('</body>', kakao_fab() + '\n</body>')
     if os.path.basename(filename) not in ("apply.html", "thanks.html"):
         full = full.replace('</body>', mobile_cta_bar(path_prefix) + '\n</body>')
@@ -234,7 +256,7 @@ def romanize(text):
             out.append(ch.lower())
     return ''.join(out)
 
-REGION_SLUG = romanize(REGION_SHORT)  # 예: 군산 -> gunsan (슬러그 접미사로 사용)
+REGION_SLUG = romanize(REGION_SHORT)  # 예: 여수 -> yeosu (슬러그 접미사로 사용)
 
 def josa_eun_neun(word):
     """받침 유무에 따라 '은'/'는' 중 맞는 조사를 반환 (BRAND가 지역마다 달라져도 문법 맞게)."""
@@ -468,7 +490,7 @@ APPLY_FORM = f'''<form class="form-card" action="https://formsubmit.co/{LEAD_EMA
       <input type="hidden" name="_subject" value="[{BRAND}] 새 상담 신청">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="thanks.html">
-      <div class="field"><label for="tf-name">이름</label><input id="tf-name" name="이름" type="text" placeholder="학부모님 성함" required></div>
+      <div class="field"><label for="tf-name">학생 이름</label><input id="tf-name" name="학생이름" type="text" placeholder="학생 이름" required></div>
       <div class="field"><label for="tf-phone">연락처</label><input id="tf-phone" name="연락처" type="tel" placeholder="010-0000-0000" required></div>
       <div class="field"><label for="tf-school">재학 중인 학교 ({REGION_SHORT} 소재)</label><input id="tf-school" name="학교" type="text" placeholder="예: {next((s['name'] for s in SCHOOLS if s['level'] == '중학교'), SCHOOLS[0]['name'] if SCHOOLS else '')}"></div>
       <div class="field">
@@ -522,7 +544,7 @@ services_body = f'''
   <div class="apply-wrap" style="grid-template-columns:1fr;">
     <div>
       <p style="color:#D7E3F2;">{BRAND}{BRAND_EUN} 현재 화상과외 하나에만 집중하고 있어요. 방문 수업이 꼭 필요한 경우라면 상담 시 말씀해 주세요 — 상황에 따라 안내해 드릴 수 있는 방법을 함께 찾아볼게요.</p>
-      <div style="margin-top:18px;"><a class="cta-btn" href="apply.html" style="background:var(--accent);color:var(--primary-strong)!important;">무료 상담 신청하기</a></div>
+      <div style="margin-top:18px;"><a class="cta-btn" href="apply.html" style="background:var(--accent);color:#071A2E!important;">무료 상담 신청하기</a></div>
     </div>
   </div>
 </section>
@@ -839,7 +861,8 @@ def blog_card(post):
     </div>'''.format(date=post["date"], category=post["category"], title=post["title"], teaser=post["teaser"], slug=post["slug"])
 
 def build_blog_body():
-    cards = "\n    ".join(blog_card(p) for p in BLOG_POSTS)
+    latest_first = sorted(enumerate(BLOG_POSTS), key=lambda t: (t[1]["date"], t[0]), reverse=True)
+    cards = "\n    ".join(blog_card(p) for _, p in latest_first)
     return f'''
 <section class="page-hero">
   <span class="eyebrow">블로그</span>
@@ -855,27 +878,115 @@ def build_blog_body():
 </section>
 '''
 
+def cta_big(prefix="../"):
+    return f'''<div class="cta-big">
+  <div class="cta-big-text">
+    <span class="cta-badge">무료</span>
+    <h2>30분 무료체험수업 먼저 받아보세요</h2>
+    <p>이름과 연락처만 남기시면 24시간 이내에 담당자가 연락드려요. 체험 후 마음에 들 때만 결정하세요.</p>
+  </div>
+  <div class="cta-big-btns">
+    <a class="cta-main" href="{prefix}apply.html">무료체험 신청하기 →</a>
+    <a class="cta-sub" href="tel:{PHONE_TEL}">전화 {PHONE_DISPLAY}</a>
+    <a class="cta-sub" href="{KAKAO_URL}" target="_blank" rel="noopener">카카오톡 상담</a>
+  </div>
+</div>'''
+
+def intro_banner():
+    return f'''<div class="intro-banner">
+  <span class="ib-tag">무료 상담 · 무료 체험</span>
+  <p>학생 학습 상태 진단과 학교 시험 분석을 함께 안내드려요.<br><mark class="free">30분 무료체험수업</mark>으로 먼저 확인해보세요.</p>
+  <div class="ib-btns">
+    <a class="ib-kakao" href="{KAKAO_URL}" target="_blank" rel="noopener">카카오톡 상담 <i>↗</i></a>
+    <a class="ib-apply" href="../apply.html">무료체험 신청 <i>✨</i></a>
+  </div>
+</div>'''
+
+def _split_long_p(m):
+    inner = m.group(1)
+    if "<br" in inner or len(inner) < 170:
+        return m.group(0)
+    sents = [x for x in re.split(r'(?<=[.!?])\s+', inner.strip()) if x]
+    chunks, cur = [], []
+    for sx in sents:
+        cur.append(sx)
+        if len(" ".join(cur)) >= 90 or len(cur) >= 2:
+            chunks.append(" ".join(cur)); cur = []
+    if cur:
+        if chunks and len(" ".join(cur)) < 40:
+            chunks[-1] += " " + " ".join(cur)
+        else:
+            chunks.append(" ".join(cur))
+    for c in chunks:
+        if c.count("<strong>") != c.count("</strong>"):
+            return m.group(0)
+    return "".join("<p>{}</p>".format(c) for c in chunks)
+
+def _auto_format(body):
+    if "summary-box" in body:
+        return body
+    body = re.sub(r'<p>(.*?)</p>', _split_long_p, body, flags=re.S)
+    titles = re.findall(r'<h2>(.*?)</h2>', body)
+    items = "".join("<li>{}</li>".format(t) for t in titles[:5])
+    box = ('<div class="summary-box"><strong>이 글 한눈에 보기</strong><ul>' + items +
+           '<li><b>30분 무료체험수업</b>으로 먼저 확인해보실 수 있어요.</li></ul></div>')
+    body = box + body
+    def to_callout(sec, force):
+        if "<h3>" in sec or "callout" in sec:
+            return sec
+        ps = list(re.finditer(r'<p>([^<]*?)</p>', sec))
+        if not ps:
+            return sec
+        last = ps[-1]
+        if sec[last.end():].strip():
+            return sec
+        if not (force or re.match(r'(결국|무엇보다|중요한 건)', last.group(1))):
+            return sec
+        return sec[:last.start()] + '<div class="callout"><strong>핵심 정리</strong>' + last.group(1) + '</div>' + sec[last.end():]
+    parts = re.split(r'(?=<h2>)', body)
+    return parts[0] + "".join(to_callout(p, i in (1, 3)) for i, p in enumerate(parts[1:]))
+
+def wrap_boxes(body):
+    body = _auto_format(body)
+    body = body.replace("30분 무료체험수업", '<mark class="free">30분 무료체험수업</mark>')
+    parts = re.split(r'(?=<h2>)', body)
+    out = [intro_banner(), parts[0]]
+    n = 0
+    has_mid = 'mid-cta' in body
+    for p in parts[1:]:
+        m = re.search(r'\s*<h3>', p)
+        if m:
+            main, faq = p[:m.start()], p[m.start():]
+            out.append('<div class="pbox">' + main + '</div>')
+            out.append('<div class="pbox faq-box">' + faq + '</div>')
+        else:
+            out.append('<div class="pbox">' + p + '</div>')
+        n += 1
+        if n == 3 and not has_mid:
+            out.append('<div class="mid-cta"><strong>우리 아이에게 맞는지 궁금하시다면</strong><br><mark class="free">30분 무료체험수업</mark>으로 먼저 확인해보세요. <a class="cta-btn" href="../apply.html">무료체험 신청하기 →</a></div>')
+    return "".join(out)
+
+def cover_html(post):
+    if os.path.exists(os.path.join(ROOT, "blog", "img", post["slug"] + ".webp")):
+        return '<img class="post-cover" src="img/{}.webp" width="720" height="720" alt="{} 1:1 화상과외 안내" loading="eager">'.format(post["slug"], post["title"].split(",")[0])
+    return ""
+
 def blog_post_body(post):
     return f'''
 <nav class="breadcrumb"><a href="../blog.html">블로그</a> / {post["category"]}</nav>
-<section class="page-hero">
+<section class="page-hero post-hero">
   <span class="eyebrow">{post["date"]} · {post["category"]}</span>
   <h1>{post["title"]}</h1>
+  {cover_html(post)}
+  <div class="hero-cta"><a class="cta-main" href="../apply.html">30분 무료체험 신청하기 →</a><span>상담·체험 모두 무료</span></div>
 </section>
 <section>
-  <article class="prose">
-    {post["body"]}
+  <article class="prose blog-prose">
+    {wrap_boxes(post["body"])}
   </article>
 </section>
 <section>
-  <div class="apply-wrap" style="grid-template-columns:1fr;">
-    <div>
-      <span class="eyebrow" style="color:var(--accent-strong)">지금 확인해보세요</span>
-      <h2>30분 무료체험수업 먼저 받아보세요</h2>
-      <p style="color:#D7E3F2;">이름과 연락처만 남겨주시면 24시간 이내에 담당자가 연락드립니다.</p>
-      <div style="margin-top:18px;"><a class="cta-btn" href="../apply.html" style="background:var(--accent);color:var(--primary-strong)!important;">무료 상담 신청하기</a></div>
-    </div>
-  </div>
+  {cta_big()}
 </section>
 <p style="margin-top:14px;"><a href="../blog.html">← 블로그 목록으로</a></p>
 '''
@@ -1237,6 +1348,7 @@ def school_body(school):
     <h3>과목별 과외 안내</h3>
     <p>{school["name"]} 학생 대상으로는 아래 과목의 화상과외를 안내하고 있어요.</p>
     <div class="subjects" style="margin-bottom:6px;">{subjects_row}</div>
+    <p style="margin-top:12px;">{"".join('<a class="subj-link" href="{}-{}.html">{} {}과외</a> '.format(school["slug"], c, school["name"], s) for s, c in SUBJECT_CODES.items())}</p>
   </div>
 </section>
 <section>
@@ -1252,11 +1364,186 @@ def school_body(school):
       <span class="eyebrow" style="color:var(--accent-strong)">{school["name"]} 학생 학부모님께</span>
       <h2>지금 무료 상담을 신청해보세요</h2>
       <p style="color:#D7E3F2;">이름과 연락처만 남겨주시면 24시간 이내에 담당자가 연락드립니다.</p>
-      <div style="margin-top:18px;"><a class="cta-btn" href="../apply.html" style="background:var(--accent);color:var(--primary-strong)!important;">무료 상담 신청하기</a></div>
+      <div style="margin-top:18px;"><a class="cta-btn" href="../apply.html" style="background:var(--accent);color:#071A2E!important;">무료 상담 신청하기</a></div>
     </div>
   </div>
 </section>
 '''
+
+# ---------------------------------------------------------------
+# 학교 x 과목 페이지 (schools/{slug}-{subj}.html)
+# ---------------------------------------------------------------
+SUBJECT_CODES = {"국어": "korean", "수학": "math", "영어": "english"}
+
+SUBJ_TEXT = {
+    ("초등학교", "국어"): {
+        "hero": "읽기·쓰기 기초를 즐겁게 잡는",
+        "problem": "책은 좋아하는데 받아쓰기나 수행평가에서 아쉬운 점수가 나오거나, 반대로 글 읽기 자체를 부담스러워하는 경우가 많아요. 초등 국어는 어휘력과 문장 이해가 이후 모든 과목의 바탕이 되기 때문에 이 시기에 습관을 잡아두는 게 중요합니다.",
+        "patterns": ["받아쓰기와 맞춤법 실수가 반복된다", "글을 읽고 핵심을 한 문장으로 말하기 어려워한다", "글쓰기 수행평가를 시작하기 막막해한다"],
+        "exam": "학교 단원평가와 받아쓰기는 범위가 정해져 있어서, 2주 전부터 어휘·맞춤법을 짧게 매일 반복하는 방식이 효과적이에요. 수행평가는 쓰기 전에 말로 먼저 정리해보는 연습을 함께 합니다.",
+        "guide": "하루 15분 소리 내어 읽기, 읽은 내용을 한 문장으로 요약하기, 모르는 낱말 뜻 추측해보기의 세 가지를 꾸준히 이어가도록 안내해요.",
+    },
+    ("초등학교", "수학"): {
+        "hero": "기초 연산과 개념을 탄탄히 다지는",
+        "problem": "연산은 잘하는데 문장제 문제만 나오면 막히거나, 학년이 올라가며 분수·비율에서 갑자기 어려워지는 경우가 많아요. 수학은 앞 단원 이해가 뒤 단원으로 이어져서, 어디서 막혔는지 정확히 찾는 게 먼저입니다.",
+        "patterns": ["계산은 맞는데 식 세우기를 어려워한다", "분수·소수 개념이 흔들린다", "틀린 문제를 다시 풀기 싫어한다"],
+        "exam": "단원평가 전에는 틀린 문제 위주로 복습하고, 서술형은 풀이 과정을 말로 설명해보는 연습을 해요. 결손 단원이 발견되면 그 단원부터 거꾸로 채웁니다.",
+        "guide": "매일 짧은 연산 연습, 오답 한 문제 다시 풀기, 풀이를 소리 내어 설명하기 습관을 잡도록 도와드려요.",
+    },
+    ("초등학교", "영어"): {
+        "hero": "듣기·말하기부터 자연스럽게 시작하는",
+        "problem": "알파벳과 파닉스는 배웠는데 실제 읽기와 말하기로 이어지지 않거나, 영어를 낯설어하고 부끄러워하는 경우가 많아요. 초등 영어는 성적보다 영어에 대한 거부감을 없애는 게 가장 중요합니다.",
+        "patterns": ["파닉스는 아는데 문장을 읽을 때 더듬는다", "듣기는 되는데 말하기를 부끄러워한다", "단어를 외워도 금방 잊는다"],
+        "exam": "학교 영어는 평가 부담이 크지 않아서, 시험 대비보다 듣기·말하기 노출을 꾸준히 늘리는 게 핵심이에요. 고학년은 기초 문법과 독해로 서서히 넘어갑니다.",
+        "guide": "짧은 영어 영상·노래 듣기, 배운 표현 하루 한 번 말해보기, 쉬운 그림책 읽기를 무리 없이 이어가도록 안내해요.",
+    },
+    ("중학교", "국어"): {
+        "hero": "내신 서술형까지 챙기는",
+        "problem": "평소 책은 읽는데 시험에서는 시간이 부족하거나, 서술형·수행평가에서 점수를 놓치는 경우가 많아요. 중학교 국어는 교과서 작품 분석과 문법, 서술형 답안 작성이 함께 나와서 준비 방식이 따로 필요합니다.",
+        "patterns": ["문학 작품의 표현법과 주제를 정리하기 어렵다", "문법 개념이 헷갈린다", "서술형 답안에서 감점이 반복된다"],
+        "exam": "시험 3주 전에는 교과서 작품 분석과 문법 정리, 2주 전에는 예상 서술형 작성, 1주 전에는 오답과 암기 점검 순서로 진행하는 걸 추천해요. 학교 시험 범위와 출제 유형에 맞춰 조정합니다.",
+        "guide": "작품마다 주제·표현·갈래를 한 장으로 정리하고, 서술형은 직접 써서 첨삭받는 방식으로 학습하도록 도와드려요.",
+    },
+    ("중학교", "수학"): {
+        "hero": "수행평가까지 함께 관리하는",
+        "problem": "공부 시간은 긴데 점수가 안 오르거나, 중1에서 중2로 넘어가며 방정식·함수에서 갑자기 어려워지는 경우가 많아요. 시간을 늘리는 것보다 어디서 실수하는지 찾아 고치는 게 더 효율적입니다.",
+        "patterns": ["개념은 아는데 응용·서술형에서 막힌다", "계산 실수와 조건을 놓치는 실수가 반복된다", "시험 시간 배분이 안 된다"],
+        "exam": "시험 3주 전 개념 재정리, 2주 전 유형별 문제 풀이, 1주 전 오답 노트와 실전 시간 연습 순서로 준비해요. 학교별 서술형 비중과 난이도에 맞춰 문제 유형을 고릅니다.",
+        "guide": "오답 노트를 단원별로 쌓고, 틀린 이유를 스스로 설명해보고, 모르는 부분은 그날 바로 질문하는 습관을 잡도록 안내해요.",
+    },
+    ("중학교", "영어"): {
+        "hero": "교과서 본문과 서술형을 함께 잡는",
+        "problem": "단어는 외우는데 문장 해석이 안 되거나, 본문 암기는 했는데 서술형에서 감점되는 경우가 많아요. 중학교 영어는 본문 분석, 문법, 어휘, 서술형이 골고루 나와서 우선순위를 정하는 게 중요합니다.",
+        "patterns": ["문법 개념을 알아도 문제에 적용하지 못한다", "본문을 외웠는데 변형 문제에서 틀린다", "철자·대소문자 실수로 서술형 감점을 당한다"],
+        "exam": "본문 구조 분석, 문법 포인트 정리, 어휘 암기, 서술형 쓰기 연습 순서로 시험 3주 전부터 나눠 진행해요. 학교 교과서와 시험 유형에 맞춰 범위를 조정합니다.",
+        "guide": "본문을 문장 단위로 해석해보고, 핵심 문법을 예문으로 정리하고, 서술형은 직접 써서 첨삭받는 흐름을 안내해요.",
+    },
+    ("고등학교", "국어"): {
+        "hero": "내신과 비문학 독해를 함께 챙기는",
+        "problem": "문학은 어느 정도 되는데 비문학에서 시간이 부족하거나, 내신과 모의고사 준비 방식이 달라 혼란스러운 경우가 많아요. 고등 국어는 학교 범위 암기와 처음 보는 지문 독해가 함께 필요합니다.",
+        "patterns": ["비문학 지문을 끝까지 못 푼다", "문학 선택지에서 자꾸 헷갈린다", "내신 범위가 많아 정리가 안 된다"],
+        "exam": "내신은 작품·문법 범위를 미리 나눠 정리하고, 모의고사형 지문은 문단 구조 파악 훈련을 병행하는 방식이 효과적이에요. 학교별 출제 경향에 맞춰 비중을 조정합니다.",
+        "guide": "문단별 핵심 문장 찾기, 지문 요약 연습, 오답의 근거 문장 확인하기를 꾸준히 이어가도록 도와드려요.",
+    },
+    ("고등학교", "수학"): {
+        "hero": "내신과 모의고사를 함께 대비하는",
+        "problem": "내신 대비는 되는데 모의고사에서 점수가 안 나오거나, 진도가 빠르다 보니 앞 단원이 비어 있는 경우가 많아요. 고등 수학은 개념 위에 쌓는 과목이라 결손을 빨리 찾아 메우는 게 중요합니다.",
+        "patterns": ["개념은 알지만 응용 문제에서 막힌다", "시험 시간 안에 끝까지 풀지 못한다", "이전 학년 개념이 비어 있다"],
+        "exam": "내신은 학교 프린트와 기출 유형 중심으로, 모의고사는 시간 배분과 풀이 순서 연습 중심으로 준비해요. 시험 3주 전부터 단원별 오답 정리를 시작하는 걸 추천합니다.",
+        "guide": "오답 노트 작성, 풀이 과정 말로 설명하기, 시간을 재고 푸는 연습을 주기적으로 하도록 안내해요.",
+    },
+    ("고등학교", "영어"): {
+        "hero": "내신과 수능 독해를 함께 준비하는",
+        "problem": "중학교 때는 곧잘 했는데 고등 영어 지문이 길어지면서 어려워하거나, 내신 본문 암기와 모의고사 독해가 따로 놀아 부담스러운 경우가 많아요.",
+        "patterns": ["지문이 길어지면 해석 속도가 느려진다", "어휘와 구문 이해가 부족하다", "내신 서술형과 변형 문제에서 감점된다"],
+        "exam": "내신은 본문 분석과 문법·어휘 정리, 서술형 연습 순서로 준비하고, 모의고사는 독해 속도와 유형별 풀이 훈련을 병행해요. 학교별 출제 방식에 맞춰 조정합니다.",
+        "guide": "매일 짧은 지문 읽기, 구문 분석 연습, 어휘 반복 복습을 무리 없이 이어가도록 도와드려요.",
+    },
+}
+
+def subject_page_slug(school, subj):
+    return "{}-{}".format(school["slug"], SUBJECT_CODES[subj])
+
+def school_subject_body(school, subj):
+    level = school["level"]
+    info = LEVEL_INFO[level]
+    t = SUBJ_TEXT[(level, subj)]
+    name = school["name"]
+    subj_links = "".join(
+        '<a href="{}.html" class="{}">{}</a>'.format(subject_page_slug(school, s), "on" if s == subj else "", s)
+        for s in SUBJECT_CODES
+    )
+    patterns = "".join("<li>{}</li>".format(p) for p in t["patterns"])
+    related = [p for p in BLOG_POSTS if name in p["title"]][:4]
+    related_html = ""
+    if related:
+        related_html = '<h3>{} 관련 글</h3><ul class="related-list">{}</ul>'.format(
+            name, "".join('<li><a href="../blog/{}.html">{}</a></li>'.format(p["slug"], p["title"]) for p in related))
+    other_subj = "".join(
+        '<li><a href="{}.html">{} {}과외 <span class="arrow">→</span></a></li>'.format(subject_page_slug(school, s), name, s)
+        for s in SUBJECT_CODES if s != subj
+    )
+    faq = [
+        ("{} {}과외는 화상으로만 진행되나요?".format(name, subj), "네, {}에서는 1:1 화상과외만 진행합니다. 화면 공유로 문제를 함께 풀고, 수업은 녹화되어 복습에 활용할 수 있어요.".format(BRAND)),
+        ("처음부터 등록해야 하나요?", "아니요. 30분 무료체험수업을 먼저 받아보시고, 선생님과 수업 방식이 맞는지 확인한 뒤 결정하시면 됩니다."),
+        ("{} 학생이 아니어도 신청할 수 있나요?".format(name), "네, {} 관내 어느 학교든 매칭 가능해요. 재학 중인 학교를 알려주시면 그 학교 상황에 맞춰 안내해 드립니다.".format(REGION_SHORT)),
+        ("비용은 어떻게 되나요?", "과목·수업 시간·주당 횟수·선생님 경력에 따라 달라져서 상담 시 안내해 드려요. 체험수업 후 결정하시면 되니 부담 없이 문의해주세요."),
+        ("시험 기간에만 수업받아도 되나요?", "가능합니다. 시험 3~4주 전부터 집중 대비하는 방식도 있고, 평소 꾸준히 관리하는 방식도 있어서 상황에 맞게 정해드려요."),
+    ]
+    faq_html = "".join("<p><strong>Q. {}</strong><br>{}</p>".format(q, a) for q, a in faq)
+    return f'''
+<nav class="breadcrumb"><a href="../index.html">홈</a> / <a href="{school["slug"]}.html">{name} 과외</a> / {subj}</nav>
+<section class="page-hero">
+  <span class="eyebrow">{REGION_FULL} {level} · {subj} 화상과외</span>
+  <h1>{name} {subj}과외, {t["hero"]} 1:1 화상 수업</h1>
+  <p>{name} {info["stage"]}에게 맞춰 {subj} 학습 상태를 먼저 확인하고, 30분 무료체험수업으로 선생님과의 궁합을 확인해보세요.</p>
+  <div class="subj-tabs">{subj_links}</div>
+  <div style="margin-top:18px;"><a class="cta-btn" href="../apply.html">30분 무료체험 신청하기</a></div>
+</section>
+<section>
+  <div class="prose">
+    <h2>{name} {subj}, 이런 고민이 자주 나와요</h2>
+    <p>{t["problem"]}</p>
+    <ul class="check-list">{patterns}</ul>
+    <p>{BRAND}는 상담에서 재학 중인 학교와 최근 학습 상태를 먼저 확인한 뒤, {name} 같은 {level} 학생을 지도해본 경험이 있는 선생님을 화상으로 연결해 드려요.</p>
+
+    <h2>{name} {subj}과외 매칭은 이렇게 진행돼요</h2>
+    <ol class="step-list">
+      <li><strong>상담</strong> 학교·학년·현재 고민을 간단히 알려주세요.</li>
+      <li><strong>선생님 추천</strong> 학생 성향과 목표에 맞는 선생님을 안내해 드려요.</li>
+      <li><strong>30분 무료체험수업</strong> 실제 수업을 먼저 받아보고 결정합니다.</li>
+      <li><strong>정규 수업</strong> 화상으로 진행하고 수업은 녹화되어 복습에 활용해요.</li>
+    </ol>
+
+    <h2>1:1 화상과외 vs 학원 vs 인강</h2>
+    <div class="cmp-wrap"><table class="cmp">
+      <thead><tr><th></th><th>1:1 화상과외</th><th>학원</th><th>인강</th></tr></thead>
+      <tbody>
+        <tr><td>맞춤 진도</td><td>학생 수준에 맞춤</td><td>반 진도에 맞춤</td><td>정해진 순서</td></tr>
+        <tr><td>즉시 질문</td><td>수업 중 바로 가능</td><td>수업 후 개별 질문</td><td>어려움</td></tr>
+        <tr><td>이동 시간</td><td>없음</td><td>있음</td><td>없음</td></tr>
+        <tr><td>복습</td><td>수업 녹화 활용</td><td>직접 정리</td><td>영상 반복</td></tr>
+        <tr><td>학교별 대비</td><td>학교 범위에 맞춤</td><td>일반 커리큘럼</td><td>일반 커리큘럼</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="mid-cta"><strong>우리 아이에게 맞는 {subj} 선생님이 궁금하시다면</strong><br>30분 무료체험수업으로 먼저 확인해보세요. <a class="cta-btn" href="../apply.html">무료체험 신청</a></div>
+
+    <h2>{name} {subj} 시험 대비 전략</h2>
+    <p>{t["exam"]}</p>
+    <p>학교마다 시험 범위와 출제 방식이 조금씩 다르기 때문에, 상담 때 최근 시험 결과나 오답 유형을 알려주시면 그에 맞춰 준비 순서를 잡아드려요.</p>
+
+    <h2>{subj} 공부법 가이드</h2>
+    <p>{t["guide"]}</p>
+    <p>혼자 하기 어려운 부분은 수업 중에 함께 점검하고, 아이가 부담 느끼지 않는 분량으로 꾸준히 이어가는 것을 가장 중요하게 생각합니다.</p>
+
+    <h2>자주 묻는 질문</h2>
+    {faq_html}
+    {related_html}
+  </div>
+</section>
+<section>
+  <div class="head-row"><div><span class="eyebrow">다른 과목</span><h2>{name} 다른 과목 과외</h2></div></div>
+  <ul class="school-list" style="max-width:480px;">{other_subj}</ul>
+  <p style="margin-top:14px;font-size:13.5px;"><a href="{school["slug"]}.html">{name} 화상과외 전체 안내 →</a> · <a href="../regions.html">{REGION_SHORT} 학교 전체 검색 →</a></p>
+</section>
+<section>
+  <div class="apply-wrap" style="grid-template-columns:1fr;">
+    <div>
+      <span class="eyebrow" style="color:var(--accent-strong)">{name} {subj}과외</span>
+      <h2>30분 무료체험수업으로 먼저 확인하세요</h2>
+      <p style="color:#D7E3F2;">이름과 연락처만 남겨주시면 24시간 이내에 담당자가 연락드립니다.</p>
+      <div style="margin-top:18px;"><a class="cta-btn" href="../apply.html" style="background:var(--accent);color:#071A2E!important;">무료 상담 신청하기</a></div>
+    </div>
+  </div>
+</section>
+'''
+
+import concise_data
+concise_data.REGION = REGION_SHORT
+for _p in BLOG_POSTS:
+    if _p["slug"] in concise_data.D:
+        _p["body"] = concise_data.render(concise_data.D[_p["slug"]], _p["slug"])
 
 # generate all pages
 # ---------------------------------------------------------------
@@ -1288,6 +1575,7 @@ for post in BLOG_POSTS:
         blog_post_body(post),
         path_prefix="../",
         canonical=BASE_URL + "/blog/{}.html".format(post["slug"]),
+        og_image=(BASE_URL + "/blog/img/{}.jpg".format(post["slug"])) if os.path.exists(os.path.join(ROOT, "blog", "img", post["slug"] + ".webp")) else "",
     )
 
 page("apply.html", f"무료 상담 신청 | {BRAND}", f"{BRAND} 화상과외 매칭 무료 상담을 신청하세요.", "apply.html",
@@ -1314,6 +1602,16 @@ for school in SCHOOLS:
         path_prefix="../",
         canonical=BASE_URL + "/schools/{}.html".format(school["slug"]),
     )
+    for subj in SUBJECT_CODES:
+        page(
+            "schools/{}.html".format(subject_page_slug(school, subj)),
+            "{} {}과외 | 1:1 화상 {}".format(school["name"], subj, BRAND),
+            "{} {}과외 고민, 학교 상황에 맞춰 1:1 화상으로 시작하세요. 30분 무료체험수업 가능. {}".format(school["name"], subj, BRAND),
+            "regions.html",
+            school_subject_body(school, subj),
+            path_prefix="../",
+            canonical=BASE_URL + "/schools/{}.html".format(subject_page_slug(school, subj)),
+        )
 
 # ---------------------------------------------------------------
 # sitemap.xml (public pages only)
@@ -1321,6 +1619,8 @@ for school in SCHOOLS:
 sitemap_urls = ["index.html", "services.html", "process.html", "teachers.html", "regions.html", "blog.html"]
 for school in SCHOOLS:
     sitemap_urls.append("schools/{}.html".format(school["slug"]))
+    for subj in SUBJECT_CODES:
+        sitemap_urls.append("schools/{}.html".format(subject_page_slug(school, subj)))
 for post in BLOG_POSTS:
     sitemap_urls.append("blog/{}.html".format(post["slug"]))
 
