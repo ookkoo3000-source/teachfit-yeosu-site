@@ -102,8 +102,37 @@ def head(title, desc, path_prefix, canonical, noindex=False):
 '''.format(title=title, desc=desc, canonical=canonical, font=FONT_LINK, p=path_prefix, robots=robots_tag, verify=verify_tags, brand=BRAND, base=BASE_URL)
 
 def wave_strip():
-    return '''<svg class="wave-strip" viewBox="0 0 200 7" preserveAspectRatio="none" aria-hidden="true">
-  <path d="M0 3.5 Q 12.5 -0.5 25 3.5 T 50 3.5 T 75 3.5 T 100 3.5 T 125 3.5 T 150 3.5 T 175 3.5 T 200 3.5" fill="none" stroke="var(--primary)" stroke-width="2.4"/>
+    return '''<svg class="wave-strip" viewBox="0 0 800 56" preserveAspectRatio="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="yeosuNightSea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:var(--primary-strong)"/>
+      <stop offset="100%" style="stop-color:var(--primary)"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="800" height="56" fill="url(#yeosuNightSea)"/>
+  <circle cx="706" cy="16" r="11" fill="var(--accent-soft)" opacity=".9"/>
+  <g fill="var(--accent-soft)" opacity=".75">
+    <circle cx="48" cy="13" r="1.5"/>
+    <circle cx="132" cy="24" r="1.1"/>
+    <circle cx="214" cy="10" r="1.5"/>
+    <circle cx="304" cy="20" r="1.1"/>
+    <circle cx="392" cy="12" r="1.5"/>
+    <circle cx="472" cy="26" r="1.1"/>
+    <circle cx="552" cy="9" r="1.5"/>
+    <circle cx="616" cy="22" r="1.1"/>
+  </g>
+  <path d="M0 40 Q 20 32 40 40 T 80 40 T 120 40 T 160 40 T 200 40 T 240 40 T 280 40 T 320 40 T 360 40 T 400 40 T 440 40 T 480 40 T 520 40 T 560 40 T 600 40 T 640 40 T 680 40 T 720 40 T 760 40 T 800 40"
+    fill="none" stroke="var(--accent)" stroke-width="2" opacity=".55"/>
+  <path d="M0 48 Q 20 42 40 48 T 80 48 T 120 48 T 160 48 T 200 48 T 240 48 T 280 48 T 320 48 T 360 48 T 400 48 T 440 48 T 480 48 T 520 48 T 560 48 T 600 48 T 640 48 T 680 48 T 720 48 T 760 48 T 800 48"
+    fill="none" stroke="var(--accent-soft)" stroke-width="1.5" opacity=".4"/>
+  <g transform="translate(752,40)" opacity=".9">
+    <circle cx="0" cy="-6.5" r="6" fill="var(--accent)"/>
+    <circle cx="6.2" cy="-2" r="6" fill="var(--accent)"/>
+    <circle cx="3.8" cy="5.4" r="6" fill="var(--accent)"/>
+    <circle cx="-3.8" cy="5.4" r="6" fill="var(--accent)"/>
+    <circle cx="-6.2" cy="-2" r="6" fill="var(--accent-strong)"/>
+    <circle cx="0" cy="0" r="2.6" fill="var(--accent-soft)"/>
+  </g>
 </svg>
 '''
 
@@ -492,7 +521,7 @@ services_body = f'''
   <div class="head-row"><div><span class="eyebrow">방문 수업이 필요하시다면</span><h2>화상으로 먼저 경험해보세요</h2></div></div>
   <div class="apply-wrap" style="grid-template-columns:1fr;">
     <div>
-      <p style="color:#DCEEE8;">{BRAND}{BRAND_EUN} 현재 화상과외 하나에만 집중하고 있어요. 방문 수업이 꼭 필요한 경우라면 상담 시 말씀해 주세요 — 상황에 따라 안내해 드릴 수 있는 방법을 함께 찾아볼게요.</p>
+      <p style="color:#D7E3F2;">{BRAND}{BRAND_EUN} 현재 화상과외 하나에만 집중하고 있어요. 방문 수업이 꼭 필요한 경우라면 상담 시 말씀해 주세요 — 상황에 따라 안내해 드릴 수 있는 방법을 함께 찾아볼게요.</p>
       <div style="margin-top:18px;"><a class="cta-btn" href="apply.html" style="background:var(--accent);color:var(--primary-strong)!important;">무료 상담 신청하기</a></div>
     </div>
   </div>
@@ -843,7 +872,7 @@ def blog_post_body(post):
     <div>
       <span class="eyebrow" style="color:var(--accent-strong)">지금 확인해보세요</span>
       <h2>30분 무료체험수업 먼저 받아보세요</h2>
-      <p style="color:#DCEEE8;">이름과 연락처만 남겨주시면 24시간 이내에 담당자가 연락드립니다.</p>
+      <p style="color:#D7E3F2;">이름과 연락처만 남겨주시면 24시간 이내에 담당자가 연락드립니다.</p>
       <div style="margin-top:18px;"><a class="cta-btn" href="../apply.html" style="background:var(--accent);color:var(--primary-strong)!important;">무료 상담 신청하기</a></div>
     </div>
   </div>
@@ -872,7 +901,7 @@ apply_body = f'''
         <li>체험 수업이 마음에 들 때만 정식으로 결정</li>
       </ul>
       <div style="margin-top:24px; padding-top:20px; border-top:1px solid rgba(255,255,255,.15);">
-        <p style="color:#BFDCD3; font-size:13.5px; margin-bottom:10px;">폼 작성이 번거로우시면 전화나 카카오톡으로 바로 상담하셔도 돼요.</p>
+        <p style="color:#A9BEDA; font-size:13.5px; margin-bottom:10px;">폼 작성이 번거로우시면 전화나 카카오톡으로 바로 상담하셔도 돼요.</p>
         <div style="display:flex; gap:10px; flex-wrap:wrap;">
           <a class="cta-ghost" style="border-color:rgba(255,255,255,.35); color:#fff;" href="tel:{PHONE_TEL}">\U0001F4DE 전화 상담</a>
           <a class="cta-ghost" style="border-color:rgba(255,255,255,.35); color:#fff;" href="{KAKAO_URL}" target="_blank" rel="noopener">\U0001F4AC 카카오톡 상담</a>
@@ -928,7 +957,7 @@ def school_body(school):
     <div>
       <span class="eyebrow" style="color:var(--accent-strong)">{school["name"]} 학생 학부모님께</span>
       <h2>지금 무료 상담을 신청해보세요</h2>
-      <p style="color:#DCEEE8;">이름과 연락처만 남겨주시면 24시간 이내에 담당자가 연락드립니다.</p>
+      <p style="color:#D7E3F2;">이름과 연락처만 남겨주시면 24시간 이내에 담당자가 연락드립니다.</p>
       <div style="margin-top:18px;"><a class="cta-btn" href="../apply.html" style="background:var(--accent);color:var(--primary-strong)!important;">무료 상담 신청하기</a></div>
     </div>
   </div>
