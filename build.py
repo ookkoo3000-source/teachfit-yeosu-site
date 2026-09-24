@@ -18,7 +18,7 @@ PHONE_TEL = "01031315305"
 BASE_URL = "https://yeosu.slovrest.com"   # 이 지역 사이트의 실제 도메인
 LEAD_EMAIL = "ookkoo12@naver.com"   # 상담 신청 폼이 도착할 이메일 (FormSubmit 릴레이)
 KAKAO_URL = "https://open.kakao.com/o/sCdocZOi"   # 카카오톡 오픈채팅 상담방
-NAVER_VERIFICATION = ""  # 네이버 서치어드바이저 소유확인 (여수 서브도메인으로 등록 후 채워넣기)
+NAVER_VERIFICATION = "7562c1e2bd22589f4b57392c4db1a3eb743b1d16"  # 네이버 서치어드바이저 소유확인
 GOOGLE_VERIFICATION = ""  # 구글 서치콘솔 소유확인 (등록 시 채워넣기)
 
 # 학교 목록 — 시/군 교육지원청 공식 학교안내 기준으로 초/중/고 전체를 넣을 것
