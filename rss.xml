@@ -6,9 +6,44 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Thu, 24 Sep 2026 00:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Fri, 25 Sep 2026 00:00:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>경호초등학교 학습습관 잡기, 스스로 공부하는 아이로 키우는 초등 루틴</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-gyeongho-es-hakseup-seupgwan.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-gyeongho-es-hakseup-seupgwan.html</guid>
+    <description>숙제는 하는데 스스로 공부하는 힘이 부족한 경호초등학교 아이, 초등 시기에 꼭 잡아야 할 공부 루틴과 부모님의 역할을 정리했어요.</description>
+    <pubDate>Fri, 25 Sep 2026 00:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>거문중학교 2학기 기말고사 대비, 섬 지역 중학생이 혼자서도 흔들리지 않는 준비법</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-geomun-ms-2haggi-gimalgosa.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-geomun-ms-2haggi-gimalgosa.html</guid>
+    <description>학원 선택지가 적은 섬 지역 거문중학교 학생이 2학기 기말고사를 스스로 준비하는 과목별 계획과 화상과외 활용법을 정리했어요.</description>
+    <pubDate>Fri, 25 Sep 2026 00:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>부영여자고등학교 고1 내신 적응, 중학교와 달라지는 공부법을 빨리 잡는 방법</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-buyeong-girls-hs-go1-naeshin.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-buyeong-girls-hs-go1-naeshin.html</guid>
+    <description>중학교 때와 같은 방식으로는 점수가 안 나오는 부영여자고등학교 1학년, 고등 내신에 빠르게 적응하는 과목별 공부법을 정리했어요.</description>
+    <pubDate>Fri, 25 Sep 2026 00:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>관기초등학교 선행학습 어디까지, 초등 시기에 맞는 선행 속도와 기준</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-gwangi-es-seonhaeng.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-gwangi-es-seonhaeng.html</guid>
+    <description>주변에서 선행을 많이 한다는데 우리 아이는 괜찮을까 고민되는 관기초등학교 학부모님께, 초등 선행의 적정 범위와 판단 기준을 정리했어요.</description>
+    <pubDate>Fri, 25 Sep 2026 00:00:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>돌산중앙중학교 과학 내신 대비, 암기보다 원리로 점수 올리는 공부법</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-dolsanjungang-ms-gwahak-naeshin.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-dolsanjungang-ms-gwahak-naeshin.html</guid>
+    <description>외울 게 많아 보이는 중학교 과학, 돌산중앙중학교 학생이 원리 중심으로 개념을 정리하고 계산·그래프 문제까지 대비하는 방법을 정리했어요.</description>
+    <pubDate>Fri, 25 Sep 2026 00:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>여수고등학교 기말고사 대비 화상과외, 지금부터 이렇게 준비하세요</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-hs-gimalgosa-daebi.html</link>
