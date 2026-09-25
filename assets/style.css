@@ -363,6 +363,27 @@ mark.free{background:linear-gradient(transparent 55%, var(--accent-soft) 55%); c
 .post-hero h1{margin-inline:auto;}
 .post-hero .hero-cta{justify-content:center;}
 
+/* 학교별 과외 목록 (regions.html) — 전체 학교 카드 + 검색·학교급 필터 */
+.school-dir{padding-top:8px;}
+.school-toolbar{display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-bottom:10px;}
+.school-search{flex:1 1 320px; min-width:0; border:1.5px solid var(--line); background:var(--surface); color:var(--ink); border-radius:999px; padding:14px 22px; font-size:15px; font-family:inherit;}
+.school-search:focus{outline:none; border-color:var(--primary); box-shadow:0 0 0 3px var(--primary-soft);}
+.school-chips{display:flex; gap:8px; flex-wrap:wrap;}
+.school-chips .chip{border:1.5px solid var(--line); background:var(--surface); color:var(--ink); border-radius:999px; padding:9px 18px; font-size:14px; font-weight:700; cursor:pointer; font-family:inherit;}
+.school-chips .chip[aria-pressed="true"]{background:var(--primary); border-color:var(--primary); color:#fff;}
+.school-count,.school-empty{font-size:13.5px; color:var(--muted-2); margin:6px 0 0;}
+.school-sec-title{font-size:24px; margin:40px 0 16px; display:flex; align-items:center; gap:10px;}
+.school-sec-title .tag{font-family:'Noto Sans KR',sans-serif; font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:999px; background:var(--accent-soft); color:var(--accent-strong);}
+.school-grid{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px;}
+.school-item{display:block; background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:16px 18px; font-weight:700; font-size:15px; color:var(--ink); line-height:1.4; transition:transform .15s, box-shadow .15s, border-color .15s;}
+.school-item i{display:block; font-style:normal; font-weight:500; font-size:12.5px; color:var(--muted); margin-top:6px; line-height:1.5;}
+.school-item:hover{transform:translateY(-2px); border-color:var(--primary); box-shadow:0 12px 26px -18px var(--pbox-shadow, rgba(0,0,0,.3));}
+.school-item[hidden],.school-sec[hidden]{display:none;}
+.hl-box{margin-top:40px; background:var(--primary-soft); border-radius:16px; padding:18px 22px; font-size:15px; color:var(--ink); line-height:1.7;}
+.hl-box a{color:var(--primary-strong); font-weight:800;}
+@media (max-width:900px){ .school-grid{grid-template-columns:repeat(3,minmax(0,1fr));} }
+@media (max-width:640px){ .school-grid{grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px;} .school-item{padding:13px 14px; font-size:14px;} .school-sec-title{font-size:20px;} }
+
 /* =================================================================
    밝은 풍경 테마 (region.py BRIGHT = True 인 지역만 포함) — 구미 디자인 일반화
    색은 theme.css의 --b-* 변수로 지역마다 다르게
