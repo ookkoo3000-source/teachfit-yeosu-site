@@ -6,9 +6,44 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Fri, 25 Sep 2026 09:40:00 +0900</lastBuildDate>
+  <lastBuildDate>Sun, 27 Sep 2026 09:40:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>무선중학교 수학과외, 내신 수학 점수를 지키는 학기 중 관리법과 시험 3주 계획</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-museon-ms-suhak-naesin.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-museon-ms-suhak-naesin.html</guid>
+    <description>무선중학교 학생이 학기 중에 수학 내신을 꾸준히 관리하는 방법과 시험 3주 전부터의 단계별 계획을 정리했어요.</description>
+    <pubDate>Sun, 27 Sep 2026 09:40:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>도원초등학교 수학과외, 문장제 문제를 어려워하는 아이를 위한 읽기와 풀이 연습법</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-dowon-es-suhak-munjangje.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-dowon-es-suhak-munjangje.html</guid>
+    <description>계산은 잘하는데 문장제 문제만 나오면 막히는 도원초등학교 학생을 위해 문제 읽기부터 식 세우기까지 단계별 연습법을 정리했어요.</description>
+    <pubDate>Sun, 27 Sep 2026 09:30:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여남고등학교 수학과외, 모의고사 수학 점수를 올리는 문항 유형별 공부법</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-yeonam-hs-suhak-moeuigosa.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-yeonam-hs-suhak-moeuigosa.html</guid>
+    <description>내신은 괜찮은데 모의고사 수학 점수가 잘 안 나오는 여남고등학교 학생을 위해 문항 유형별 공부법과 시간 배분 전략을 정리했어요.</description>
+    <pubDate>Sun, 27 Sep 2026 09:20:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>돌산중학교 화상과외 선생님 고르는 법, 중학생에게 맞는 선생님 기준 6가지</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-dolsan-ms-hwasang-seonsaengnim.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-dolsan-ms-hwasang-seonsaengnim.html</guid>
+    <description>돌산중학교 학생에게 맞는 화상과외 선생님을 고를 때 무엇을 봐야 할지, 상담부터 첫 수업까지 확인할 기준을 정리했어요.</description>
+    <pubDate>Sun, 27 Sep 2026 09:10:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>나진초등학교 영어과외 시작 시기, 학교 영어 수업 전에 준비할 것과 순서</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-najin-es-yeongeo-sijak.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-najin-es-yeongeo-sijak.html</guid>
+    <description>학교 영어 수업이 시작되기 전 무엇을 준비해야 할지 고민되는 나진초등학교 학부모님께, 영어 시작 신호와 첫 단계 학습 순서를 정리했어요.</description>
+    <pubDate>Sun, 27 Sep 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>돌산중앙중학교 과학 내신 대비, 암기보다 원리로 점수 올리는 공부법</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-dolsanjungang-ms-gwahak-naeshin.html</link>
