@@ -6,9 +6,44 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Sun, 27 Sep 2026 09:40:00 +0900</lastBuildDate>
+  <lastBuildDate>Mon, 28 Sep 2026 09:40:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>여남중학교 국어과외, 수행평가까지 꼼꼼하게</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-yeonam-ms-gugeo-suhaeng.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-yeonam-ms-gugeo-suhaeng.html</guid>
+    <description>국어 지필 시험과 수행평가를 함께 챙기기 어려운 여남중학교 학생을 위해 수행평가 유형별 준비법과 지필 시험 대비 흐름을 정리했어요.</description>
+    <pubDate>Mon, 28 Sep 2026 09:40:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>동백초등학교 영어과외, 중학 영어 미리 준비</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-dongbaek-es-yeongeo-junghak.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-dongbaek-es-yeongeo-junghak.html</guid>
+    <description>중학교 입학을 앞둔 동백초등학교 5, 6학년 학생을 위해 중학 영어로 넘어가기 전에 준비해야 할 어휘, 문법, 읽기, 쓰기를 정리했어요.</description>
+    <pubDate>Mon, 28 Sep 2026 09:30:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여수석유화학고등학교 영어과외, 내신 기초부터 탄탄하게</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-petrochem-hs-yeongeo-gicho.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-petrochem-hs-yeongeo-gicho.html</guid>
+    <description>전공 실습과 자격증 준비로 바쁜 여수석유화학고등학교 학생을 위해 영어 내신 기초를 짧은 시간에 다지는 방법과 공부 계획을 정리했어요.</description>
+    <pubDate>Mon, 28 Sep 2026 09:20:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>안산중학교 수학과외, 기초 빈틈부터 채우는 맞춤 수업</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-ansan-ms-suhak-gicho.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-ansan-ms-suhak-gicho.html</guid>
+    <description>수업 진도를 따라가기 어려워진 안산중학교 학생을 위해 수학 기초 빈틈을 찾고 채우는 순서와 학교 진도와 병행하는 방법을 정리했어요.</description>
+    <pubDate>Mon, 28 Sep 2026 09:10:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>돌산초등학교 국어과외, 독해력 기초 다지기</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-dolsan-es-gugeo-dokhae.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-dolsan-es-gugeo-dokhae.html</guid>
+    <description>책을 읽어도 내용을 잘 정리하지 못하는 돌산초등학교 학생을 위해 초등 독해력을 키우는 단계별 읽기 연습과 집에서 도와주는 방법을 정리했어요.</description>
+    <pubDate>Mon, 28 Sep 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>무선중학교 수학과외, 내신 수학 점수를 지키는 학기 중 관리법과 시험 3주 계획</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-museon-ms-suhak-naesin.html</link>
