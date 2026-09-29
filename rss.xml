@@ -6,9 +6,44 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Mon, 28 Sep 2026 09:40:00 +0900</lastBuildDate>
+  <lastBuildDate>Tue, 29 Sep 2026 09:40:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>여선중학교 수학과외, 일차부등식 실수 줄이기</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-yeoseon-ms-suhak-budeungsik.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-yeoseon-ms-suhak-budeungsik.html</guid>
+    <description>부등호 방향을 자주 틀리고 활용 문제에서 막히는 여선중학교 학생을 위해 일차부등식의 성질과 풀이, 활용 문제 공략법을 정리했어요.</description>
+    <pubDate>Tue, 29 Sep 2026 09:40:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>백초초등학교 국어과외, 한자어 어휘력 키우기</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-baekcho-es-gugeo-eohwi.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-baekcho-es-gugeo-eohwi.html</guid>
+    <description>교과서 낱말 뜻을 몰라 글 이해에 어려움을 겪는 백초초등학교 학생을 위해 한자어를 중심으로 어휘력을 키우는 방법을 정리했어요.</description>
+    <pubDate>Tue, 29 Sep 2026 09:30:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여수정보과학고등학교 수학과외, 내신 수학 기초 회복</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-info-science-hs-suhak-gicho.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-info-science-hs-suhak-gicho.html</guid>
+    <description>중학교 수학이 흔들린 채 고등학교에 올라온 여수정보과학고등학교 학생을 위해 필요한 기초만 골라 빠르게 채우고 내신을 안정시키는 방법을 정리했어요.</description>
+    <pubDate>Tue, 29 Sep 2026 09:20:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여도중학교 영어과외, 영어 시제 헷갈림 없애기</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-yeodo-ms-yeongeo-sije.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-yeodo-ms-yeongeo-sije.html</guid>
+    <description>현재, 과거, 진행형, 현재완료가 섞이면 헷갈리는 여도중학교 학생을 위해 중학 영어 시제를 한 번에 정리하는 방법을 소개해요.</description>
+    <pubDate>Tue, 29 Sep 2026 09:10:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>무선초등학교 수학과외, 비와 비율 쉽게 이해하기</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-museon-es-suhak-biyul.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-museon-es-suhak-biyul.html</guid>
+    <description>비와 비율, 백분율이 헷갈리는 무선초등학교 고학년 학생을 위해 비의 의미부터 비율과 백분율, 생활 속 활용 문제까지 단계별로 정리했어요.</description>
+    <pubDate>Tue, 29 Sep 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>여남중학교 국어과외, 수행평가까지 꼼꼼하게</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-yeonam-ms-gugeo-suhaeng.html</link>
