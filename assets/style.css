@@ -423,6 +423,7 @@ mark.free{background:linear-gradient(transparent 55%, var(--accent-soft) 55%); c
   .quick{padding:22px 16px 18px;}
   .q-fab{display:none;}
 }
+.kw-note{margin-top:18px; color:var(--muted); font-size:15px; line-height:1.7;}
 
 /* =================================================================
    밝은 풍경 테마 (region.py BRIGHT = True 인 지역만 포함) — 구미 디자인 일반화
@@ -508,6 +509,10 @@ mark.free{color:var(--b-brand-strong);}
   .stats .wrap > div + div{border-left:0;}
   .page-hero{background-size:auto 70px, 100% 30px, auto; padding-bottom:56px;}
 }
+
+/* Gemini 히어로 일러스트 (이미지형) */
+.hero-img{object-fit:cover; object-position:right bottom;}
+@media (max-width:900px){ .hero-img{object-position:88% bottom;} }
 /* 여수: 블로그 팁박스·체크를 동백 핑크로, 버튼은 바다 하늘색 */
 :root{--tip-bg:#FDF0F4; --tip-line:#F6C9D8; --tip-ink:#B92B5C; --card-bg:#F8F4F6; --check:#E8467C;}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--tip-bg:#2A1320; --tip-line:#5A2740; --tip-ink:#FF9DBC; --card-bg:#1E1820; --check:#FF6F9C;}}
