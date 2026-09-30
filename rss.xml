@@ -6,9 +6,44 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Tue, 29 Sep 2026 09:40:00 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 30 Sep 2026 09:40:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>구봉중학교 국어과외, 토론 수행평가 준비 전략</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-gubong-ms-gugeo-toron.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-gubong-ms-gugeo-toron.html</guid>
+    <description>토론 수행평가에서 무슨 말을 해야 할지 막막하고 반론에 당황하는 구봉중학교 학생을 위해 토론 준비부터 실전까지 정리했어요.</description>
+    <pubDate>Wed, 30 Sep 2026 09:40:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>상암초등학교 영어과외, 교과서 표현 입에 붙이기</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-sangam-es-yeongeo-pyohyeon.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-sangam-es-yeongeo-pyohyeon.html</guid>
+    <description>교과서 영어 표현을 배워도 막상 말하려면 입이 떨어지지 않는 상암초등학교 학생을 위해 핵심 표현을 자연스럽게 익히는 방법을 정리했어요.</description>
+    <pubDate>Wed, 30 Sep 2026 09:30:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여수중앙여자고등학교 수학과외, 지수와 로그 개념 완성</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-jungang-girls-hs-suhak-jisu-rogeu.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-jungang-girls-hs-suhak-jisu-rogeu.html</guid>
+    <description>거듭제곱근과 로그의 성질이 헷갈리고 계산 실수가 잦은 여수중앙여자고등학교 학생을 위해 대수의 지수와 로그 단원을 정리했어요.</description>
+    <pubDate>Wed, 30 Sep 2026 09:20:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여수개도중학교 영어과외, 교과서 본문 암기 요령</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-gaedo-ms-yeongeo-bonmun.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-gaedo-ms-yeongeo-bonmun.html</guid>
+    <description>내신 영어 본문을 외워도 금방 잊어버리고 변형 문제에서 흔들리는 여수개도중학교 학생을 위해 효과적인 본문 암기법을 정리했어요.</description>
+    <pubDate>Wed, 30 Sep 2026 09:10:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>봉덕초등학교 국어과외, 동시 감상과 쓰기 즐겁게</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-bongdeok-es-gugeo-dongsi.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-bongdeok-es-gugeo-dongsi.html</guid>
+    <description>동시를 읽어도 무슨 느낌인지 말하기 어렵고 시 쓰기 숙제가 막막한 봉덕초등학교 학생을 위해 동시 감상과 쓰기 방법을 정리했어요.</description>
+    <pubDate>Wed, 30 Sep 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>여선중학교 수학과외, 일차부등식 실수 줄이기</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-yeoseon-ms-suhak-budeungsik.html</link>
