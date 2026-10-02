@@ -6,9 +6,44 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Thu, 01 Oct 2026 09:40:00 +0900</lastBuildDate>
+  <lastBuildDate>Fri, 02 Oct 2026 09:40:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>여수종고중학교 국어과외, 관용 표현과 속담 익히기</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-jonggo-ms-gugeo-sokdam-gwanyong.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-jonggo-ms-gugeo-sokdam-gwanyong.html</guid>
+    <description>관용 표현과 속담의 뜻을 글자 그대로 해석해 문맥을 놓치는 여수종고중학교 학생을 위해 관용 표현과 속담을 정리했어요.</description>
+    <pubDate>Fri, 02 Oct 2026 09:40:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>시전초등학교 수학과외, 길이 단위와 어림하기</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-sijeon-es-suhak-giri.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-sijeon-es-suhak-giri.html</guid>
+    <description>센티미터와 밀리미터, 미터와 킬로미터 사이의 단위 변환과 자 눈금 읽기에서 자주 틀리는 시전초등학교 학생을 위해 길이 단원을 정리했어요.</description>
+    <pubDate>Fri, 02 Oct 2026 09:30:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여수화양고등학교 수학과외, 함수의 뜻과 그래프 기초</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-hwayang-hs-suhak-hamsu.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-hwayang-hs-suhak-hamsu.html</guid>
+    <description>정의역과 치역, 일대일대응, 합성함수와 역함수가 헷갈리는 여수화양고등학교 학생을 위해 고등학교 함수 단원을 기초부터 정리했어요.</description>
+    <pubDate>Fri, 02 Oct 2026 09:20:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>소호초등학교 국어과외, 질문하며 책 읽기</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-soho-es-gugeo-jilmun-dokseo.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-soho-es-gugeo-jilmun-dokseo.html</guid>
+    <description>책을 빨리 읽기만 하고 내용을 물으면 기억하지 못하는 소호초등학교 학생을 위해 질문하며 깊이 읽는 독서 방법을 정리했어요.</description>
+    <pubDate>Fri, 02 Oct 2026 09:10:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여수웅천중학교 영어과외, 접속사로 문장 연결하기</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-ungcheon-ms-yeongeo-jeopsoksa.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-ungcheon-ms-yeongeo-jeopsoksa.html</guid>
+    <description>when, because, if, although 같은 접속사의 뜻과 쓰임이 헷갈리고 긴 문장 해석이 어려운 여수웅천중학교 학생을 위해 접속사를 정리했어요.</description>
+    <pubDate>Fri, 02 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>여수삼일중학교 수학과외, 연립방정식 풀이와 활용</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-samil-ms-suhak-yeonlip.html</link>
