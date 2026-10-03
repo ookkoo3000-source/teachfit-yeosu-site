@@ -6,9 +6,44 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Fri, 02 Oct 2026 09:40:00 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 03 Oct 2026 09:40:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>쌍봉초등학교 국어과외, 이야기 요약하기 연습</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-ssangbong-es-gugeo-iyagi-yoyak.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-ssangbong-es-gugeo-iyagi-yoyak.html</guid>
+    <description>이야기를 읽고 요약하라고 하면 처음부터 끝까지 다 옮겨 쓰거나 중요한 사건을 빠뜨리는 쌍봉초등학교 학생을 위해 요약 방법을 정리했어요.</description>
+    <pubDate>Sat, 03 Oct 2026 09:40:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>신기초등학교 수학과외, 규칙 찾기와 대응 관계</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-singi-es-suhak-gyuchik.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-singi-es-suhak-gyuchik.html</guid>
+    <description>수나 도형의 규칙을 찾지 못하고 대응 관계를 식으로 나타내는 문제에서 막히는 신기초등학교 학생을 위해 규칙 찾는 방법을 정리했어요.</description>
+    <pubDate>Sat, 03 Oct 2026 09:30:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여천고등학교 영어과외, 어법 문제 핵심 포인트 정리</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-yeocheon-hs-yeongeo-eobeop.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-yeocheon-hs-yeongeo-eobeop.html</guid>
+    <description>모의고사 어법 문제에서 매번 시간을 쓰고도 틀리는 여천고등학교 학생을 위해 자주 출제되는 어법 포인트와 판단 순서를 정리했어요.</description>
+    <pubDate>Sat, 03 Oct 2026 09:20:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여수아리울중학교 수학과외, 일차함수 그래프 읽기</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-ariul-ms-suhak-ilchahamsu-graph.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-ariul-ms-suhak-ilchahamsu-graph.html</guid>
+    <description>일차함수 그래프를 보고 식을 세우지 못하고 그래프의 성질 문제에서 자주 실수하는 여수아리울중학교 학생을 위해 그래프 읽는 법을 정리했어요.</description>
+    <pubDate>Sat, 03 Oct 2026 09:10:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여양고등학교 국어과외, 고전소설 읽는 법과 출제 포인트</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-yeoyang-hs-gugeo-gojeon-soseol.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-yeoyang-hs-gugeo-gojeon-soseol.html</guid>
+    <description>고전소설의 낯선 어휘와 긴 지문 때문에 인물 관계와 사건 흐름을 놓치는 여양고등학교 학생을 위해 고전소설 독해법을 정리했어요.</description>
+    <pubDate>Sat, 03 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>여수종고중학교 국어과외, 관용 표현과 속담 익히기</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-jonggo-ms-gugeo-sokdam-gwanyong.html</link>
