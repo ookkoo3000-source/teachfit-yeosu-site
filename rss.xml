@@ -6,9 +6,44 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Sat, 03 Oct 2026 09:40:00 +0900</lastBuildDate>
+  <lastBuildDate>Sun, 04 Oct 2026 09:40:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>안심초등학교 영어과외, 영어 인사와 기본 대화 표현</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-ansim-es-yeongeo-insa-pyohyeon.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-ansim-es-yeongeo-insa-pyohyeon.html</guid>
+    <description>영어로 인사는 할 줄 알지만 How are you?에 늘 똑같이 대답하고 대화를 이어가지 못하는 안심초등학교 학생을 위해 인사와 기본 대화 표현을 정리했어요.</description>
+    <pubDate>Sun, 04 Oct 2026 09:40:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>신풍초등학교 수학과외, 직육면체와 정육면체 이해하기</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-sinpung-es-suhak-jikyukmyeonche.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-sinpung-es-suhak-jikyukmyeonche.html</guid>
+    <description>직육면체의 면, 모서리, 꼭짓점의 수를 헷갈리고 겨냥도와 전개도 문제에서 막히는 신풍초등학교 학생을 위해 입체도형의 기초를 정리했어요.</description>
+    <pubDate>Sun, 04 Oct 2026 09:30:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>한영고등학교 수학과외, 이차함수 최대·최소 완성</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-hanyoung-hs-suhak-ichahamsu-choedae.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-hanyoung-hs-suhak-ichahamsu-choedae.html</guid>
+    <description>이차함수의 꼭짓점은 구하는데 제한된 범위에서 최댓값과 최솟값을 구하는 문제에서 자주 틀리는 한영고등학교 학생을 위해 풀이 순서를 정리했어요.</description>
+    <pubDate>Sun, 04 Oct 2026 09:20:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여수중앙중학교 국어과외, 시의 표현법 정확하게 찾기</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-jungang-ms-gugeo-si-pyohyeonbeop.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-jungang-ms-gugeo-si-pyohyeonbeop.html</guid>
+    <description>시를 읽고 비유와 상징, 반복과 대구 같은 표현법을 구분하지 못해 문제에서 자주 틀리는 여수중앙중학교 학생을 위해 시의 표현법을 정리했어요.</description>
+    <pubDate>Sun, 04 Oct 2026 09:10:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여수진남중학교 영어과외, 관계대명사 확실하게 정리</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-jinnam-ms-yeongeo-gwangye-daemyeongsa.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-jinnam-ms-yeongeo-gwangye-daemyeongsa.html</guid>
+    <description>관계대명사 who, which, that을 언제 쓰는지 헷갈리고 두 문장을 하나로 합치는 문제에서 자주 틀리는 여수진남중학교 학생을 위해 관계대명사를 정리했어요.</description>
+    <pubDate>Sun, 04 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>쌍봉초등학교 국어과외, 이야기 요약하기 연습</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-ssangbong-es-gugeo-iyagi-yoyak.html</link>
