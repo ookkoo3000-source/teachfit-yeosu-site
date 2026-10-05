@@ -6,9 +6,44 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Sun, 04 Oct 2026 09:40:00 +0900</lastBuildDate>
+  <lastBuildDate>Mon, 05 Oct 2026 09:40:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>안일초등학교 수학과외, 평면도형의 이동 밀기 뒤집기 돌리기</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-anil-es-suhak-pyeongmyeon-idong.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-anil-es-suhak-pyeongmyeon-idong.html</guid>
+    <description>도형을 뒤집거나 돌렸을 때의 모양을 머릿속으로 떠올리지 못해 이동 문제에서 자주 틀리는 안일초등학교 학생을 위해 평면도형의 이동을 정리했어요.</description>
+    <pubDate>Mon, 05 Oct 2026 09:40:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>율촌중학교 국어과외, 설명문 읽기와 설명 방법</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-yulchon-ms-gugeo-seolmyeongmun.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-yulchon-ms-gugeo-seolmyeongmun.html</guid>
+    <description>설명문을 읽어도 핵심 정보가 정리되지 않고 정의, 예시, 비교, 분석 같은 설명 방법 문제를 자주 틀리는 율촌중학교 학생을 위해 설명문 읽는 법을 정리했어요.</description>
+    <pubDate>Mon, 05 Oct 2026 09:30:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여남초등학교 국어과외, 받아쓰기와 맞춤법 바로잡기</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-yeonam-es-gugeo-matchumbeop.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-yeonam-es-gugeo-matchumbeop.html</guid>
+    <description>소리 나는 대로 써서 받아쓰기에서 자주 틀리고 헷갈리는 맞춤법을 반복해서 틀리는 여남초등학교 학생을 위해 맞춤법 원리와 연습법을 정리했어요.</description>
+    <pubDate>Mon, 05 Oct 2026 09:20:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여수진성중학교 수학과외, 일차방정식 이항과 활용</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-jinseong-ms-suhak-ilcha-bangjeongsik.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-jinseong-ms-suhak-ilcha-bangjeongsik.html</guid>
+    <description>일차방정식에서 이항할 때 부호를 바꾸지 않거나 분수 계수 방정식에서 일부 항에만 곱하는 여수진성중학교 학생을 위해 풀이 순서를 정리했어요.</description>
+    <pubDate>Mon, 05 Oct 2026 09:10:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여양중학교 영어과외, 수동태 형태와 전환 연습</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-yeoyang-ms-yeongeo-sudongtae.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-yeoyang-ms-yeongeo-sudongtae.html</guid>
+    <description>능동태를 수동태로 바꿀 때 be동사의 시제와 수를 놓치고 과거분사 형태에서 자주 틀리는 여양중학교 학생을 위해 수동태를 정리했어요.</description>
+    <pubDate>Mon, 05 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>안심초등학교 영어과외, 영어 인사와 기본 대화 표현</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-ansim-es-yeongeo-insa-pyohyeon.html</link>
