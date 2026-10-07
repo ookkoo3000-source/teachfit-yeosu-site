@@ -6,9 +6,44 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Tue, 06 Oct 2026 09:40:00 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 07 Oct 2026 09:40:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>여수고등학교 수학과외, 복소수 계산과 켤레복소수</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-hs-suhak-boksosu.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-hs-suhak-boksosu.html</guid>
+    <description>i²=-1을 놓치거나 음수의 제곱근 계산, 분모의 실수화, 켤레복소수 성질에서 실수하는 여수고등학교 학생을 위해 복소수 단원을 정리했어요.</description>
+    <pubDate>Wed, 07 Oct 2026 09:40:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여수동초등학교 영어과외, 허락 구하고 대답하는 표현</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-dong-es-yeongeo-heorak.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-dong-es-yeongeo-heorak.html</guid>
+    <description>Can I ...?로 허락을 구할 때 동사 형태를 틀리거나 거절할 때 이유를 붙이지 못하는 여수동초등학교 학생을 위해 허락 구하기 표현을 정리했어요.</description>
+    <pubDate>Wed, 07 Oct 2026 09:30:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여수좌수영초등학교 국어과외, 여정 견문 감상 기행문 쓰기</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-jwasuyeong-es-gugeo-gihaengmun.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-jwasuyeong-es-gugeo-gihaengmun.html</guid>
+    <description>체험학습을 다녀와서 글을 쓰면 한 일만 나열하고 본 것과 느낀 점을 구분하지 못하는 여수좌수영초등학교 학생을 위해 기행문 쓰는 방법을 정리했어요.</description>
+    <pubDate>Wed, 07 Oct 2026 09:20:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여수중앙초등학교 수학과외, 원주율과 원의 넓이 구하기</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-jungang-es-suhak-won-neolbi.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-jungang-es-suhak-won-neolbi.html</guid>
+    <description>원주와 원의 넓이 공식을 헷갈리거나 반지름 대신 지름을 넣어 계산하는 여수중앙초등학교 학생을 위해 원주율과 원의 넓이를 원리부터 정리했어요.</description>
+    <pubDate>Wed, 07 Oct 2026 09:10:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여수중학교 영어과외, 비교급과 최상급 형태 정리</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-ms-yeongeo-bigyogeup.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-ms-yeongeo-bigyogeup.html</guid>
+    <description>more bigger처럼 비교급을 겹쳐 쓰거나 불규칙 변화와 원급 비교, 최상급 뒤의 in과 of를 헷갈리는 여수중학교 학생을 위해 비교 표현을 정리했어요.</description>
+    <pubDate>Wed, 07 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>충덕중학교 수학과외, 일차부등식 부등호 방향 실수 잡기</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-chungdeok-ms-suhak-budeungsik.html</link>
