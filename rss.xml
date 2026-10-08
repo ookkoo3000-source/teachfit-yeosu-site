@@ -6,9 +6,44 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Wed, 07 Oct 2026 09:40:00 +0900</lastBuildDate>
+  <lastBuildDate>Thu, 08 Oct 2026 09:40:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>여수여자고등학교 국어과외, 단어의 형성 합성어 파생어</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-girls-hs-gugeo-daneo-hyeongseong.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-girls-hs-gugeo-daneo-hyeongseong.html</guid>
+    <description>합성어와 파생어를 구분하지 못하고 접사와 어근, 통사적 합성어와 비통사적 합성어를 헷갈리는 여수여자고등학교 학생을 위해 단어의 형성을 정리했어요.</description>
+    <pubDate>Thu, 08 Oct 2026 09:40:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여수문수중학교 영어과외, 현재분사와 과거분사 구분</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-munsu-ms-yeongeo-bunsa.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-munsu-ms-yeongeo-bunsa.html</guid>
+    <description>a boring movie와 a bored student처럼 현재분사와 과거분사를 헷갈리고 명사 뒤에서 꾸미는 분사구를 해석하지 못하는 여수문수중학교 학생을 위해 정리했어요.</description>
+    <pubDate>Thu, 08 Oct 2026 09:30:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>예울초등학교 국어과외, 동시 읽고 직접 써 보기</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-yeul-es-gugeo-dongsi-sseugi.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-yeul-es-gugeo-dongsi-sseugi.html</guid>
+    <description>동시를 읽으면 느낌은 있는데 말하는 이와 반복되는 말을 찾지 못하고, 직접 쓰라고 하면 줄글처럼 쓰는 예울초등학교 학생을 위해 동시 감상과 쓰기를 정리했어요.</description>
+    <pubDate>Thu, 08 Oct 2026 09:20:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여천초등학교 영어과외, 물건 주인 묻는 Whose 표현</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-yeocheon-es-yeongeo-whose.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-yeocheon-es-yeongeo-whose.html</guid>
+    <description>Whose bag is this?에 대답할 때 It's my.처럼 쓰거나 mine, yours, his, hers 같은 소유대명사를 헷갈리는 여천초등학교 학생을 위해 정리했어요.</description>
+    <pubDate>Thu, 08 Oct 2026 09:10:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여수송현초등학교 수학과외, 직사각형 둘레와 넓이 구분</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-songhyeon-es-suhak-dulle-neolbi.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-songhyeon-es-suhak-dulle-neolbi.html</guid>
+    <description>둘레와 넓이를 헷갈려 공식을 바꾸어 쓰거나 단위 cm와 cm²를 섞어 쓰는 여수송현초등학교 학생을 위해 직사각형과 정사각형의 둘레와 넓이를 정리했어요.</description>
+    <pubDate>Thu, 08 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>여수고등학교 수학과외, 복소수 계산과 켤레복소수</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-hs-suhak-boksosu.html</link>
