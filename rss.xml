@@ -6,9 +6,44 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Tue, 13 Oct 2026 09:40:00 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 14 Oct 2026 09:40:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>율촌초등학교 수학과외, 막대그래프 읽고 그리기</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-yulchon-es-suhak-makdae-graph.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-yulchon-es-suhak-makdae-graph.html</guid>
+    <description>막대그래프의 세로 눈금 한 칸이 나타내는 수를 확인하지 않고 읽거나 직접 그릴 때 눈금을 정하지 못하는 율촌초등학교 학생을 위해 막대그래프 읽기와 그리기를 정리했어요.</description>
+    <pubDate>Wed, 14 Oct 2026 09:40:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>웅천초등학교 국어과외, 이야기 바꾸어 쓰기와 뒷이야기</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-ungcheon-es-gugeo-iyagi-bakkwo-sseugi.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-ungcheon-es-gugeo-iyagi-bakkwo-sseugi.html</guid>
+    <description>이야기의 결말을 바꾸어 쓰거나 뒷이야기를 상상해 쓰라고 하면 원래 이야기와 연결되지 않게 쓰는 웅천초등학교 학생을 위해 이야기 바꾸어 쓰기 방법을 정리했어요.</description>
+    <pubDate>Wed, 14 Oct 2026 09:30:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>화양초등학교 영어과외, 지금 하고 있는 일 묻고 답하기</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-hwayang-es-yeongeo-what-are-you-doing.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-hwayang-es-yeongeo-what-are-you-doing.html</guid>
+    <description>What are you doing? 질문에 I'm reading처럼 대답할 때 be동사를 빠뜨리거나 ing 철자를 틀리는 화양초등학교 학생을 위해 지금 하고 있는 일을 묻고 답하는 영어 표현을 정리했어요.</description>
+    <pubDate>Wed, 14 Oct 2026 09:20:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여수한려초등학교 영어과외, 방학 계획 be going to 표현</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-hallyeo-es-yeongeo-banghak-gyehoek.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-hallyeo-es-yeongeo-banghak-gyehoek.html</guid>
+    <description>방학 계획을 말할 때 be going to 다음에 동사원형을 쓰지 않거나 be동사를 빠뜨리는 여수한려초등학교 학생을 위해 계획을 묻고 답하는 영어 표현을 정리했어요.</description>
+    <pubDate>Wed, 14 Oct 2026 09:10:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여수종고초등학교 수학과외, 약수와 배수 공약수 공배수</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-jonggo-es-suhak-yaksu-baesu.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-jonggo-es-suhak-yaksu-baesu.html</guid>
+    <description>약수를 빠뜨리고 세거나 약수와 배수를 헷갈리며 최대공약수와 최소공배수를 언제 써야 할지 모르는 여수종고초등학교 학생을 위해 약수와 배수의 개념과 활용을 정리했어요.</description>
+    <pubDate>Wed, 14 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>여수진남초등학교 수학과외, 합동과 선대칭 점대칭 도형</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-jinnam-es-suhak-hapdong-daeching.html</link>
