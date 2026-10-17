@@ -6,9 +6,16 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Wed, 14 Oct 2026 09:40:00 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 17 Oct 2026 09:00:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>수능 영어는 몇 점이면 1등급인가요, 2028 수능에서도 절대평가인가요</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-suneung-yeongeo-jeoldaepyeongga-deunggeup.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-suneung-yeongeo-jeoldaepyeongga-deunggeup.html</guid>
+    <description>수능 영어는 절대평가라 원점수 90점 이상이면 1등급이고, 10점 간격으로 등급이 나뉘어요. 2028학년도 수능에서도 영어는 영어Ⅰ·영어Ⅱ 범위의 절대평가가 유지돼요. 등급 구간과 성적표 표기 방식을 평가원 실시요강 기준으로 정리했어요.</description>
+    <pubDate>Sat, 17 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>율촌초등학교 수학과외, 막대그래프 읽고 그리기</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-yulchon-es-suhak-makdae-graph.html</link>
