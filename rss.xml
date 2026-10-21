@@ -6,9 +6,16 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Sat, 17 Oct 2026 09:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 09:00:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>시험 성적표를 받은 날, 아이와 어떻게 이야기해야 할까요</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-seongjeokpyo-badeun-nal-daehwa.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-seongjeokpyo-badeun-nal-daehwa.html</guid>
+    <description>성적표를 받은 날에는 점수보다 '어디서 틀렸는지'를 함께 보는 대화가 다음 시험에 도움이 돼요. 첫마디, 피하면 좋은 말, 시험지로 다음 계획을 세우는 순서를 정리했어요.</description>
+    <pubDate>Wed, 21 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>수능 영어는 몇 점이면 1등급인가요, 2028 수능에서도 절대평가인가요</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-suneung-yeongeo-jeoldaepyeongga-deunggeup.html</link>
