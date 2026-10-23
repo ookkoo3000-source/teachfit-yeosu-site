@@ -6,9 +6,16 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Wed, 21 Oct 2026 09:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Fri, 23 Oct 2026 09:00:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>고등 영어, 지문 해석은 되는데 문제를 틀릴 때 확인할 것</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-yeongeo-haeseogeun-doeneunde-teullil-ttae.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-yeongeo-haeseogeun-doeneunde-teullil-ttae.html</guid>
+    <description>지문 해석은 되는데 답이 틀린다면 해석보다 '정답의 근거를 지문에서 찾는 과정'이 빠져 있는 경우가 많아요. 틀린 문제를 원인별로 나누는 방법과 선택지마다 근거 문장을 표시하는 연습을 정리했어요.</description>
+    <pubDate>Fri, 23 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>시험 성적표를 받은 날, 아이와 어떻게 이야기해야 할까요</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-seongjeokpyo-badeun-nal-daehwa.html</link>
