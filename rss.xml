@@ -6,9 +6,16 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Fri, 23 Oct 2026 09:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Fri, 30 Oct 2026 09:00:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>글씨를 대충 써서 자기 숫자를 잘못 읽고 틀리는 아이</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-geulssi-daechung-sseoseo-teullim.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-geulssi-daechung-sseoseo-teullim.html</guid>
+    <description>숫자를 흘려 써서 6과 0, 1과 7을 스스로 헷갈려 틀린다면 글씨 전체를 고치기보다 숫자 쓰기와 풀이 칸 나누기부터 바꾸는 것이 효과적이에요. 헷갈리기 쉬운 숫자 쓰는 법과 연습장 쓰는 방법을 정리했어요.</description>
+    <pubDate>Fri, 30 Oct 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>고등 영어, 지문 해석은 되는데 문제를 틀릴 때 확인할 것</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-yeongeo-haeseogeun-doeneunde-teullil-ttae.html</link>
