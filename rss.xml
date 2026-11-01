@@ -6,9 +6,16 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Fri, 30 Oct 2026 09:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Sun, 01 Nov 2026 09:00:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>중학교 영어 교과서 본문 음원, 이렇게 활용해 보세요</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-junghak-yeongeo-gyogwaseo-eumwon.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-junghak-yeongeo-gyogwaseo-eumwon.html</guid>
+    <description>영어 교과서 본문 음원은 듣기용으로만 쓰기보다 따라 읽기와 받아쓰기로 쓰면 본문 이해와 내신 준비에 함께 도움이 돼요. 음원을 쓰는 순서와 하루 15분 활용법을 정리했어요.</description>
+    <pubDate>Sun, 01 Nov 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>글씨를 대충 써서 자기 숫자를 잘못 읽고 틀리는 아이</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-geulssi-daechung-sseoseo-teullim.html</link>
