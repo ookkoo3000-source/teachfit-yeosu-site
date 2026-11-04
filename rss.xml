@@ -6,9 +6,16 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Sun, 01 Nov 2026 09:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 04 Nov 2026 09:00:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>무선중학교 학부모님이 묻는 영어 말하기 수행평가 준비법</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-museon-ms-yeongeo-malhagi-suhaeng.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-museon-ms-yeongeo-malhagi-suhaeng.html</guid>
+    <description>영어 말하기 수행평가는 원고를 통째로 외우기보다 핵심 문장 몇 개를 정해 소리 내어 연습하고, 녹음해서 들어 보는 방식이 효과적이에요. 무선중학교 학생이 평가 기준 확인부터 연습까지 챙길 순서를 정리했어요.</description>
+    <pubDate>Wed, 04 Nov 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>중학교 영어 교과서 본문 음원, 이렇게 활용해 보세요</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-junghak-yeongeo-gyogwaseo-eumwon.html</link>
