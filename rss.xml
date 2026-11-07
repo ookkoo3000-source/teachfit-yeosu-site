@@ -6,9 +6,16 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Thu, 05 Nov 2026 09:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 07 Nov 2026 09:00:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>여남고등학교 1학년, 겨울방학 국어 공부는 무엇부터 할까요</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-yeonam-hs-go1-gyeoul-gugeo.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-yeonam-hs-go1-gyeoul-gugeo.html</guid>
+    <description>고1 겨울방학 국어는 1학년 공통국어에서 흔들린 영역을 정리하고, 2학년에 배울 국어 선택과목을 미리 훑어보는 순서가 좋아요. 여남고등학교 1학년이 문학·독서·문법 영역별로 점검할 것과 방학 계획을 정리했어요.</description>
+    <pubDate>Sat, 07 Nov 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>돌산중학교 학부모님이 묻는 책을 안 읽는 중학생, 다시 읽게 하는 법</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-dolsan-ms-chaek-an-ingneun-junghaksaeng.html</link>
