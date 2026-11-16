@@ -6,9 +6,16 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Sat, 07 Nov 2026 09:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 09:00:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>안산중학교 2학년, 겨울방학 영어 문법은 어떻게 정리할까요</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-ansan-ms-jung2-gyeoul-yeongeo-munbeop.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-ansan-ms-jung2-gyeoul-yeongeo-munbeop.html</guid>
+    <description>중2 겨울방학 영어 문법은 새 문법을 많이 배우기보다 1·2학년 교과서에서 나온 문법을 문장으로 다시 정리하는 것이 먼저예요. 안산중학교 2학년이 2학년 시험지로 약한 문법을 찾고, 교과서 문장으로 정리하는 순서를 정리했어요.</description>
+    <pubDate>Mon, 16 Nov 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>여남고등학교 1학년, 겨울방학 국어 공부는 무엇부터 할까요</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-yeonam-hs-go1-gyeoul-gugeo.html</link>
