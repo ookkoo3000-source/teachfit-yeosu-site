@@ -6,9 +6,16 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Mon, 16 Nov 2026 09:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Tue, 17 Nov 2026 09:00:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>화정초등학교 학부모님이 묻는 영어 단어, 읽기는 되는데 철자를 못 쓸 때</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-hwajeong-es-yeongeo-dano-cheolja-sseugi.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-hwajeong-es-yeongeo-dano-cheolja-sseugi.html</guid>
+    <description>영어 단어를 보면 읽을 수 있는데 막상 쓰려면 철자가 틀리는 아이가 많아요. 화정초등학교 학생처럼 초등 영어 단어 쓰기를 연습하는 아이를 위해 소리와 글자를 연결하며 쓰는 방법을 정리했어요.</description>
+    <pubDate>Tue, 17 Nov 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>안산중학교 2학년, 겨울방학 영어 문법은 어떻게 정리할까요</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-ansan-ms-jung2-gyeoul-yeongeo-munbeop.html</link>
