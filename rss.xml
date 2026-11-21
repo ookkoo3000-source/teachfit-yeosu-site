@@ -6,9 +6,16 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Tue, 17 Nov 2026 09:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Sat, 21 Nov 2026 09:00:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>죽림초등학교 학부모님이 묻는 소리 내어 읽을 때 더듬는 아이, 어떻게 연습할까요</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-jungnim-es-sori-nae-ilkgi-deodeum.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-jungnim-es-sori-nae-ilkgi-deodeum.html</guid>
+    <description>글을 소리 내어 읽을 때 자꾸 더듬거나 줄을 건너뛰는 아이가 있어요. 죽림초등학교 학생처럼 읽기가 매끄럽지 않은 아이가 짧은 글을 반복해 읽으며 읽기 힘을 키우는 방법을 정리했어요.</description>
+    <pubDate>Sat, 21 Nov 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>화정초등학교 학부모님이 묻는 영어 단어, 읽기는 되는데 철자를 못 쓸 때</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-hwajeong-es-yeongeo-dano-cheolja-sseugi.html</link>
