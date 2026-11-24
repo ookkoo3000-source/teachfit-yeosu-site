@@ -6,9 +6,16 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Sat, 21 Nov 2026 09:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 09:00:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>거문중학교 학부모님이 묻는 역사 시대 순서를 자꾸 헷갈리는 아이</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-geomun-ms-yeoksa-sidae-sunseo.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-geomun-ms-yeoksa-sidae-sunseo.html</guid>
+    <description>역사 공부에서 사건은 외웠는데 어느 시대 일인지, 무엇이 먼저인지 헷갈리는 중학생이 많아요. 거문중학교 학생처럼 시대 순서가 헷갈리는 아이가 직접 연표를 만들며 흐름을 잡는 방법을 정리했어요.</description>
+    <pubDate>Wed, 25 Nov 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>죽림초등학교 학부모님이 묻는 소리 내어 읽을 때 더듬는 아이, 어떻게 연습할까요</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-jungnim-es-sori-nae-ilkgi-deodeum.html</link>
