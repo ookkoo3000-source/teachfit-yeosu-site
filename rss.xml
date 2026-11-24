@@ -6,9 +6,16 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Wed, 25 Nov 2026 09:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 09:10:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>여수구봉중학교 학부모님이 묻는, 수학 공식은 외웠는데 언제 써야 할지 모르는 아이</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-gubong-ms-gongsik-eonje-sseoyaheoni.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-gubong-ms-gongsik-eonje-sseoyaheoni.html</guid>
+    <description>공식을 외운 것과 어떤 상황에서 그 공식을 써야 하는지 판단하는 건 다른 능력이에요. 여수구봉중학교 학생이 공식을 문제 상황에 연결하는 연습법을 정리했어요.</description>
+    <pubDate>Wed, 25 Nov 2026 09:10:00 +0900</pubDate>
+  </item>
   <item>
     <title>거문중학교 학부모님이 묻는 역사 시대 순서를 자꾸 헷갈리는 아이</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-geomun-ms-yeoksa-sidae-sunseo.html</link>
