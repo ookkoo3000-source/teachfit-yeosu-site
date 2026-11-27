@@ -6,9 +6,16 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Wed, 25 Nov 2026 09:10:00 +0900</lastBuildDate>
+  <lastBuildDate>Fri, 27 Nov 2026 09:00:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>여수신월초등학교 학부모님이 묻는, 곱셈은 아는데 나눗셈을 못 세우는 아이</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-sinwol-es-nanusem-saenggak-mothanda.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-sinwol-es-nanusem-saenggak-mothanda.html</guid>
+    <description>곱셈은 잘하는데 나눗셈 문제만 보면 어떻게 식을 세워야 할지 막막해하는 건 두 계산이 서로 반대라는 걸 아직 연결 짓지 못해서인 경우가 많아요. 여수신월초등학교 학생이 곱셈과 나눗셈을 연결해서 이해하는 법을 정리했어요.</description>
+    <pubDate>Fri, 27 Nov 2026 09:00:00 +0900</pubDate>
+  </item>
   <item>
     <title>여수구봉중학교 학부모님이 묻는, 수학 공식은 외웠는데 언제 써야 할지 모르는 아이</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-gubong-ms-gongsik-eonje-sseoyaheoni.html</link>
