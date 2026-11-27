@@ -6,9 +6,23 @@
   <description>여수 학교별 내신·과목별 화상과외 학습 전략</description>
   <language>ko-kr</language>
   <atom:link href="https://yeosu.slovrest.com/rss.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Fri, 27 Nov 2026 09:00:00 +0900</lastBuildDate>
+  <lastBuildDate>Fri, 27 Nov 2026 09:20:00 +0900</lastBuildDate>
 
   <!-- RSS_ITEMS_START -->
+  <item>
+    <title>여수아리울중학교 학부모님이 묻는 아는 영어 단어인데 문장에서는 뜻이 안 통하는 아이</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-ariul-ms-aneun-daneo-dareun-tteut.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-ariul-ms-aneun-daneo-dareun-tteut.html</guid>
+    <description>단어장에서 외운 뜻을 넣었는데 문장 해석이 어색해지는 중학생이 많아요. 여수아리울중학교 학생처럼 아는 단어가 문장에서 다른 뜻으로 쓰일 때 막히는 아이가 문맥으로 뜻을 고르는 방법을 정리했어요.</description>
+    <pubDate>Fri, 27 Nov 2026 09:20:00 +0900</pubDate>
+  </item>
+  <item>
+    <title>여수화양고등학교 학부모님이 묻는 영어 지문 해석은 다 되는데 답을 고르면 틀리는 아이</title>
+    <link>https://yeosu.slovrest.com/blog/yeosu-hwayang-hs-haeseok-doeneunde-seonji-teullim.html</link>
+    <guid>https://yeosu.slovrest.com/blog/yeosu-hwayang-hs-haeseok-doeneunde-seonji-teullim.html</guid>
+    <description>영어 지문은 해석이 되는데 선택지를 고르면 자꾸 틀리는 고등학생이 많아요. 여수화양고등학교 학생처럼 해석은 되는데 답이 틀리는 아이가 지문 근거와 선택지를 맞춰 보는 방법을 정리했어요.</description>
+    <pubDate>Fri, 27 Nov 2026 09:10:00 +0900</pubDate>
+  </item>
   <item>
     <title>여수신월초등학교 학부모님이 묻는, 곱셈은 아는데 나눗셈을 못 세우는 아이</title>
     <link>https://yeosu.slovrest.com/blog/yeosu-sinwol-es-nanusem-saenggak-mothanda.html</link>
